@@ -33,6 +33,9 @@ app.use("/expense", ExpenseRoutes, (req, res) => {
 app.use("/income", IncomeRoutes, (req, res) => {
   res.status(404).send("Routes not found");
 });
+app.use("/notes", NotesRoutes, (req, res) => {
+  res.status(404).send("Routes not found");
+});
 
 app.listen(process.env.portForApp, () => {
   console.log(
