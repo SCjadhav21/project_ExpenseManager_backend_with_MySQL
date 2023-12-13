@@ -2,6 +2,7 @@ require("dotenv").config();
 const mysql = require("mysql2/promise");
 const express = require("express");
 const cors = require("cors");
+const { NotesRoutes } = require("./routes/notes.routes");
 const { ExpenseRoutes } = require("./routes/expense.routes");
 const app = express();
 const pool = mysql.createPool({
